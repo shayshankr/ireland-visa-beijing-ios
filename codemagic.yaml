@@ -29,3 +29,9 @@ workflows:
     artifacts:
       - build/ios/archive/*.xcarchive
       - /tmp/xcodebuild_logs/*.log
+
+    # ── To enable App Store publishing, you need: ──────────────────────────────
+    # 1. Apple Developer account (developer.apple.com/programs/enroll)
+    # 2. In Codemagic Settings > Integrations > Developer Portal > connect Apple ID
+    # 3. Add ios_signing section back with distribution_type: app_store
+    # 4. Add publishing > app_store_connect section
